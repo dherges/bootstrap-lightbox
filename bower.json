@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-lightbox",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dherges/bootstrap-lightbox",
+  "authors": [
+    "David Herges <david@spektrakel.de>"
+  ],
+  "description": "A Bootstrap lightbox I've put together on a saturday morning",
+  "keywords": [
+    "bootstrap",
+    "lightbox",
+    "responsive",
+    "html5",
+    "css",
+    "javascript",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

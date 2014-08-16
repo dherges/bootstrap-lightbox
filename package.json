@@ -1,0 +1,39 @@
+{
+  "name": "bootstrap-lightbox",
+  "version": "0.1.0",
+  "description": "A Bootstrap lightbox that I've put together on a saturday morning",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "bower": "^1.3.9",
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-less": "^0.11.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dherges/bootstrap-lightbox.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "lightbox",
+    "css",
+    "javascript",
+    "js",
+    "html5",
+    "responsive"
+  ],
+  "author": {
+    "name": "David Herges",
+    "email": "david@spektrakel.de",
+    "url": "http://spektrakel.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dherges/bootstrap-lightbox/issues"
+  },
+  "homepage": "https://github.com/dherges/bootstrap-lightbox"
+}
