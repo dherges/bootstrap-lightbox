@@ -30,18 +30,32 @@
 <div class="lightbox fade" aria-hidden="true" role="dialog" tabindex="-1" id="test">
   <div class="lightbox-content">
     <div class="lightbox-picture">
-      <img src="//lorempixel.com/1000/600" class="img-responsive" />
-
-      <div class="lightbox-description">
-        <p>Lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum  dolor sit amet, pero alteri</p>
+      <div class="lightbox-item">
+        <img src="//lorempixel.com/1000/600" class="img-responsive" />
+        <div class="lightbox-description">
+          <p>Lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum dolor sit amet, pero alteri lorem ipsum  dolor sit amet, pero alteri</p>
+        </div>
+      </div>
+      <div class="lightbox-item" style="display: none;">
+        <img src="//lorempixel.com/g/800/300" class="img-responsive" />
+        <div class="lightbox-description">
+          <p>Dolorem sit amet.</p>
+        </div>
       </div>
 
-      <div class="lightbox-control">
-        <button type="button" class="lightbox-close" data-dismiss="lightbox">
-          <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Schlie&szlig;en</span>
-        </button>
-      </div>
+      <!-- Close -->
+      <button type="button" class="lightbox-close" data-dismiss="lightbox">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Schlie&szlig;en</span>
+      </button>
+
+      <!-- Controls -->
+      <a class="left lightbox-control" href="#test" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right lightbox-control" href="#test" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
   </div>
 </div>

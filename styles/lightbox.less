@@ -79,21 +79,10 @@
   padding: @padding-base-vertical @padding-base-horizontal;
   text-align: center;
   border-radius: @border-radius-base;
+  .opacity(0);
 
   background-color: rgba(0, 0, 0, 0.7);
   color: @white;
-}
-
-.lightbox-control {
-  position: absolute;
-  top: 0;
-  right: 4px;
-}
-
-.lightbox-description,
-.lightbox-control {
-  .transition(opacity 0.5s ease-out);
-  .opacity(0);
 }
 
 .lightbox-close {
@@ -102,17 +91,31 @@
   font-size: @font-size-h1;
   line-height: @font-size-h1;
   margin-top: 0px;
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  .opacity(0);
+}
 
-  button& {
-    padding-right: 4px;
-    margin-top: -4px;
+.lightbox-control {
+  .carousel-control();
+  
+  &.left,
+  &.right {
+    // undo the background image
+    background-image: none;
   }
+}
+
+// Animate the opacity of description and close
+.lightbox-description,
+.lightbox-close {
+  .transition(opacity 0.5s ease-out);
 }
 
 .lightbox-picture:hover {
 
-  .lightbox-description,
-  .lightbox-control {
+  .lightbox-description {
     // fade in the description when hovering over the picture
     .opacity(1);
   }
