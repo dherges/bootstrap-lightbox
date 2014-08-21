@@ -30,7 +30,9 @@ module.exports = function(grunt) {
       },
       compile: {
         options: {
-          sourceMap: true
+          sourceMap: true,
+          sourceMapRootpath: '/',
+          sourceMapBasepath: '',
         },
         files: {
           'styles/lightbox.css': 'styles/lightbox.less'
