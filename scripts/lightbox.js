@@ -162,7 +162,7 @@
       this.$backdrop = $('<div class="lightbox-backdrop ' + animate + '" />')
         .appendTo(this.$body)
 
-      this.$element.find('.lightbox-content').on('click.dismiss.bs.lightbox',
+      this.$element.find('.lightbox-area').on('click.dismiss.bs.lightbox',
         $.proxy(function (e) {
           if (e.target !== e.currentTarget) return
           this.options.backdrop == 'static'

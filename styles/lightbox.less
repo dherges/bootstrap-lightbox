@@ -34,7 +34,7 @@
   &.in .modal-dialog { .translate3d(0, 0, 0) }
 }
 
-.lightbox-content {
+.lightbox-area {
   display: block;
   position: relative;
   // Horizontally centers the image
@@ -49,8 +49,7 @@
   }
 }
 
-// The picture that is displayed
-.lightbox-picture {
+.lightbox-content {
   // Together with .lightbox-content{text-align: center;} horizontally centers the image
   display: inline-block;
   overflow: hidden;
@@ -64,9 +63,13 @@
   border-radius: @thumbnail-border-radius;
   // Remove focus outline from opened modal
   outline: 0;
+}
 
-  .img-responsive {
-    max-height: 100%;
+.lightbox-picture {
+  display: none;
+  
+  &.active {
+    display: block;
   }
 }
 
@@ -83,6 +86,11 @@
 
   background-color: rgba(0, 0, 0, 0.7);
   color: @white;
+}
+
+.lightbox-image {
+  .img-responsive();
+  max-height: 100%;
 }
 
 .lightbox-close {
@@ -113,7 +121,7 @@
   .transition(opacity 0.5s ease-out);
 }
 
-.lightbox-picture:hover {
+.lightbox-wrapper:hover {
 
   .lightbox-description {
     // fade in the description when hovering over the picture
